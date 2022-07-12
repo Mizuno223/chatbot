@@ -5,6 +5,9 @@ const AnswersList = () => {
     return (
         <div className="c-grid__answer">
             <Answer />
+            <Answer />
+            <Answer />
+            <Answer />
         </div>
     )
 }
