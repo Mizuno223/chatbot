@@ -15,7 +15,7 @@ class App extends React.Component {
     }
   }
 
-  initAnswer = () => {
+  initAnswer() {
     const initDataset = this.state.dataset[this.state.currentId]
     const initAnswers = initDataset.answers
 
@@ -23,6 +23,10 @@ class App extends React.Component {
       answers: initAnswers
     })
   } 
+
+  componentDidMount() {
+    this.initAnswer()
+  }
 
   render() {
     return (
