@@ -19,7 +19,7 @@ class App extends React.Component {
     return (
       <section className="c-section">
           <div className="c-box">
-            <AnswersList></AnswersList>
+            <AnswersList answers={this.state.answers} />
           </div>
       </section>
     );
